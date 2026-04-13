@@ -1,0 +1,30 @@
+{
+  "name": "heranca-digital",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aplicativo web seguro para armazenar memórias digitais, senhas e arquivos importantes com proteção por senha",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "react",
+    "security",
+    "digital-legacy",
+    "encryption",
+    "memory-storage"
+  ],
+  "author": "CipherAegis Team",
+  "license": "MIT",
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.1",
+    "vite": "^8.0.8"
+  }
+}
