@@ -18,6 +18,9 @@ Um aplicativo web seguro para armazenar memórias digitais, senhas e arquivos im
 - **Parallax Background** com imagem personalizada
 
 ### 🔄 Melhorias Recentes
+- **Criptografia AES-256** segura substituindo Base64
+- **Migração automática** de dados antigos
+- **Chaves únicas** por usuário
 - Validação completa de formulários
 - Botões de editar/excluir memórias
 - Mensagens de feedback com animações
@@ -30,6 +33,7 @@ Um aplicativo web seguro para armazenar memórias digitais, senhas e arquivos im
 - **React 19** - Framework frontend
 - **Vite** - Build tool e dev server
 - **CSS3** - Estilização moderna
+- **CryptoJS** - Criptografia AES-256 segura
 - **LocalStorage** - Persistência de dados
 - **Base64** - Criptografia básica
 
@@ -55,18 +59,21 @@ npm run build
 ## 🎯 Como Usar
 
 1. **Acesse** `http://localhost:5173`
-2. **Cadastre-se** ou use `admin`/`12345`
-3. **Desbloqueie memórias** com senha `memoria123`
+2. **Cadastre-se**
+3. **Desbloqueie memórias**
 4. **Adicione memórias** com texto e/ou mídia
 5. **Configure herdeiro** para transmissão
 6. **Edite/exclua** memórias conforme necessário
 
 ## 🔐 Segurança
 
-- Criptografia básica com Base64
-- Proteção por senha para memórias
-- Validação de entrada
-- Isolamento de dados por usuário
+- **Criptografia AES-256** com crypto-js para proteção de dados
+- **Chaves únicas por usuário** baseadas no email (SHA-256 + salt)
+- **Migração automática** de dados antigos (Base64 → AES)
+- **Hash de senhas** (próxima implementação)
+- **Proteção por senha** para acessar memórias
+- **Isolamento de dados** por usuário
+- **Compatibilidade** com dados criptografados anteriormente
 
 ## 📱 Responsividade
 
